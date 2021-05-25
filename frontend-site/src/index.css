@@ -1,0 +1,564 @@
+html{
+  height: 100%;
+}
+body {
+  margin: 0;
+  min-height: 100%;
+  font-size: 1.6rem;
+ 
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* display: flex;
+  flex-direction: column; */
+
+}
+
+code {
+  
+font-family: 'Sriracha', cursive;
+}
+.fa{
+  font-size: 18px;
+}
+#rs{
+  font-size: 14px;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Sriracha', cursive;
+}
+.sfrom{
+  font-family: 'Sriracha', cursive;
+}
+button:hover{
+  background-color: #20a020;
+}
+                                             /* Navbar */
+header{
+  position: sticky;
+  width: 100%;
+  top: 0;
+}
+.navbar{
+ background-color: #00001C;
+}
+#hicon{
+  background-color: #DCDCDC;
+  border: 1px solid #20a020;
+}
+.navbar-toggler-icon{
+  background-color: #20a020;
+}
+.uname{
+  color: #86C67C;
+  font-weight: 700;
+  font-family: 'Sriracha', cursive;
+  font-size: 22px;
+}
+.input-group-append #basic-addon2{
+  background-color: #86C67C;
+  height: 40px;
+}
+#navbarDropdown{
+  color: #fff;
+}
+#cart{
+  color: #fff;
+  display: flex;
+}
+#nav-header{
+  justify-content: space-between;
+}
+ #navbarSupportedContent {
+  align-items: center;
+  width: 40%;
+}
+#login{
+  background-color: #86C67C;
+  /* padding-left: 100px;
+  padding-right: 100px; */
+  color: black;
+  width: 100%;
+
+}
+.navbar-brand {
+  color: #fff;
+  padding-left: 30px;
+  font-weight: 900;
+  font-family: 'Rock Salt', cursive;
+ 
+}
+p{
+  text-align: center;
+    font-size: 12px;
+ font-family: 'Sriracha', cursive;
+}
+#items{
+  font-size: 14px;
+  
+}
+#items:hover{
+ color: #126e04;
+  text-decoration: underline;
+}
+/* #search .btn{
+  background-color: #86C67C;
+  height: 40px;
+} */
+.badge{
+  background-color: #126e04;
+  position: absolute;
+  top: 24px;
+  border-radius: 50px;
+}
+  .sh-cart{
+    font-weight: 500;
+    padding-left: 10px;
+  }
+  .search-group{
+    width: 80%;
+  }
+
+  /* slideing */
+  .w-100{
+    height: 350px;
+  }
+
+                                       /* Login Page*/
+
+.ecom-brand{
+  color: #126e04;
+
+}
+.login-container{
+  width: 34%;
+    border: 1px solid #DCDCDC;
+    margin: auto;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+form{
+  padding-left: 35px;
+  margin-top: 30px;
+  padding-right: 10px;
+  /* font-family: 'Sriracha', cursive; */
+}
+h2{
+  padding-left: 35px;
+  padding-top: 20px;
+font-family: 'Sriracha', cursive;
+}
+
+input{
+  width: 90%;
+  font-family: 'Sriracha', cursive;
+}
+.btn-login {
+  background-color: #86C67C;
+  margin-top: 25px;
+  width: 90%;
+  margin-bottom: 30px;
+  padding: 5px ;
+  border-radius: 2px;
+  font-family: 'Sriracha', cursive;
+  border: 1px #20a020 solid;
+}
+h6{
+  padding-top: 10px;
+font-family: 'Sriracha', cursive;
+}
+.form-check{
+  margin-top: 20px;
+}
+
+.btn-reg{
+  width: 90%;
+  margin-left: 19px;
+  margin-bottom: 30px;
+  padding: 5px 40px;
+  border-radius: 2px;
+  font-family: 'Sriracha', cursive;
+}
+
+
+                                        /* Register */
+
+.register-container{
+  width: 35%;border: 1px solid #DCDCDC;
+  margin: auto;
+  border-radius: 5px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+                                        /* Orders */
+
+  .card-text{
+    margin-right: 115px;
+  }
+  .card:hover{
+    box-shadow: 0px 30px 18px -8px rgba(0,0,0,0.1);
+    transform: scale(1.05,1.05);
+  }
+
+
+                                         /* products */
+
+main {
+  /* /* grid-area: main; */
+  /* padding: 5px;  */
+  min-height: 100%;
+}
+.roww {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.roww.center { 
+  justify-content: center;
+  background-color: gainsboro;
+} 
+
+img {
+  border-radius: 0.5rem;
+}
+img.medium {
+  max-width: 20rem;
+  width: 100%;
+  height: 20rem;
+  margin-top: 30px;
+}
+#plink{
+  text-decoration: none;
+}
+p{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+font-family: 'Sriracha', cursive;
+}
+.card {
+  text-align: center;
+  margin: 1rem;
+  position: unset;
+}
+#cp{
+  position: unset;
+}
+.card-body {
+  padding: 1rem;
+  width: 100%;
+  background-color: antiquewhite;
+}
+.pcard-body > * {
+  margin-bottom: 0.5rem;
+}
+.price {
+  font-size: 1.5rem;
+  font-family: 'Sriracha', cursive;
+}
+.rating{
+  color: #126e04;
+  margin: 0.1rem;
+}
+.rating span:last-child{
+  color: black;
+}
+
+                                       /* productScreen */
+.back a{
+  text-decoration: none;
+  
+}
+.back a:hover{
+  text-decoration:underline;
+  color: #20a020;
+}
+.row.top {
+  align-items: flex-start;
+  margin-top: 40px;
+  width: 100%;
+}
+.col1 {
+  flex: 1 1 20rem;
+}
+.col2 {
+  flex: 2 1 40rem;
+}
+img {
+  border-radius: 0.5rem;	  
+   width: 100%;
+}	
+img.large {
+  width: 100%;
+}
+.desc{
+  font-weight: unset;
+  font-size: 14px;
+  text-align: unset;
+  font-family: 'Sriracha', cursive;
+}
+#ap{
+  position: unset;
+}
+#price-container{
+  width: 85%;
+}
+.cart-items{
+  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+    align-items: center;
+}
+.rowp{
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+.col1 ul{
+  list-style-type: none;
+  padding: 0;
+  padding-left: none;
+}
+li{
+  margin-top: 1rem;
+}
+#select{
+  margin-top: 10px ;
+  margin-bottom: 10px ;
+}
+button:hover {
+  border: 0.1rem #20a020 solid;
+}
+button.primary {
+  background-color: #86C67C;
+  border-radius: 0.3rem;
+  border: 0.1rem #20a020 solid;
+  font-size: 20px;
+  font-family: 'Sriracha', cursive;
+  margin-bottom: 20px;
+  
+}
+button.block {
+  width: 100%;
+}
+.success {
+  color: #20a020;
+}
+.error {
+  color: #a02020;
+}
+                                      /* cartScreen */
+img.small{
+max-width: 5rem;
+width: 100%;
+}
+.min-30{
+  min-width: 100%;
+}
+ul{
+  list-style-type: none;
+}
+
+
+/* Alert */
+
+.loading{
+  display: block !important;
+}
+
+                                              /* update profile */
+.update-container{
+  width: 70%;
+  margin: auto;
+}
+.field{
+  padding: 10px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+font-family: 'Sriracha', cursive;
+}
+.input{
+  height: 55px;
+  border: 1px ridge;
+  background-color: #f4f4f4;
+  font-family: 'Sriracha', cursive;
+}
+.cpwd{
+  width: 10%;
+}
+.btn-update{
+  background-color: #86C67C;
+  /* margin-top: 30px;
+  margin-bottom: 30px; */
+  margin: auto;
+  padding: 5px 40px;
+  border-radius: 10px;
+  font-family: 'Sriracha', cursive;
+}
+h1{
+  text-align: center;
+ font-family: 'Sriracha', cursive;
+}
+
+                                             /* checkout steps */
+.checkout-steps{
+  display: flex;
+
+  }
+  .checkout-steps > div {
+   
+  border-top: 0.3rem #c0c0c0 solid;
+  color: #c0c0c0;
+  flex: 1;
+  padding: 1rem;
+  font-weight: bold;
+}
+.checkout-steps > div.active {
+  border-top-color: #20a020;
+  color: #20a020;
+}
+
+                                  /* Place order */
+ .shipping-card{
+  padding: 20px;
+  background-color: antiquewhite;
+
+ }            
+
+ .order-card{
+  padding: 20px;
+  background-color: #f4f4f4;
+ }
+ .shipping-info{
+   text-align: unset;
+   font-weight: unset;
+ }      
+ .btn-order {
+  background-color: #20a020;
+  margin-top: 25px;
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 5px 40px;
+  border-radius: 2px;
+  font-family: 'Sriracha', cursive;
+  font-size: 20px;
+}   
+.ordered-items{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: right;
+}      
+
+/* Table */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table tbody tr:nth-of-type(odd) {
+  background-color: #f4f4f4;
+}
+.table td,
+.table th {
+  text-align: left;
+  border: 0.1rem solid #e4e4e4;
+  padding: 0.5rem;
+}
+.table button {
+  margin: 0 0.2rem;
+}
+button.small {
+  font-size: 1.2rem;
+}
+
+                                            /* payment */
+#paypal{
+  width: unset;
+  margin-right: 10px;
+}
+.payment{
+  margin: 20px 0px;
+}
+                                           /* footer */
+.footer{
+  background-color: #000015;
+  color: #fff;
+  text-align: center;
+  min-height: 6rem;
+  font-family: 'Sriracha', cursive;
+  /* margin-top: auto; */
+  width: 100vw;
+  /* 50px;*/
+} 
+.ft {
+  
+  line-height: 4rem;
+}
+#hr{
+  width: 80%;
+    margin: auto;
+    border: 1px solid lightgrey;
+}
+.fa-heart{
+  color: red;
+}
+
+
+/* .grid-container {
+  display: grid;
+  grid-template-areas:
+    'header'
+    'main'
+    'footer';
+  grid-template-columns: 1fr;
+  grid-template-rows: 5rem 1fr 5rem;
+  height: 100%;
+}
+header {
+  grid-area: header;
+  background-color: #203040;
+}
+main {
+  grid-area: main;
+  /* padding: 1rem; */
+/* }
+footer {
+  grid-area: footer;
+  background-color: #203040;
+  color: #ffffff;
+} */ 
+
+
+@media only screen and (max-width: 815px){
+  .cpwd{
+  width: 12%;
+  }
+  .cart-items{
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+  }
+  
+
+}
+@media only screen and (max-width: 993px){
+  .badge{
+    top: unset;
+    bottom: 35px;
+  }
+}
+
+@media only screen and (max-width: 650px){
+  .cpwd{
+  width: 18%;
+  }
+  .login-container{
+    width: 55%;
+  }
+  .ordered-items{
+    display: grid;
+    text-align: left;
+  }
+}

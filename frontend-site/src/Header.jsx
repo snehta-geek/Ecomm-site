@@ -64,7 +64,7 @@ const Header =() =>{
                 <div className="dropdown-divider"></div>
                 <Link className="dropdown-item" to="/profile" id="items">My Profile</Link>
                 <Link className="dropdown-item" to="/orderhistory" id="items">My Order</Link>
-                <Link className="dropdown-item" to="#" id="items" onClick={sigoutHandler}>Sign Out</Link>
+                <Link className="dropdown-item" to="/signin" id="items" onClick={sigoutHandler}>Sign Out</Link>
               </div>
 
             </li>

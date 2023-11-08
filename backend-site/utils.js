@@ -8,7 +8,7 @@ export const generateToken =(user) => {
            email: user.email,
            isAdmin: user.isAdmin,
         },
-        process.env.JWT_SECRET || 'somthingsecret',                  //it encrypts ur data & generate token,store it in env file & package
+        process.env.JWT_SECRET || 'somethingsecret',                  //it encrypts ur data & generate token,store it in env file & package
         {
             expiresIn: '30d'
         }

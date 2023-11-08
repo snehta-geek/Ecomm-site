@@ -11,7 +11,9 @@ import {Provider} from "react-redux";
 ReactDOM.render(
   <Provider store={store}>                 
   <BrowserRouter>
+  <div className='main-container'>
   <App/>
+  </div>
   </BrowserRouter>
   </Provider>
  

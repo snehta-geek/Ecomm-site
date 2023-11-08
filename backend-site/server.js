@@ -1,26 +1,28 @@
 
 import express from "express";
 // import data from "./ProductData.js";
-import mongoose from 'mongoose';
 import userRouter from "./routers/userRouter.js";
 import productRouter from "./routers/productRouter.js";
 import dotenv from 'dotenv';
 import orderRouter from "./routers/orderRouter.js";
+import mongoose from 'mongoose';
 
-dotenv.config();
+dotenv.config({path: './config.env'});
 
 const app=express();
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 
-mongoose.connect(process.env.MONGODB_URL ||'mongodb://127.0.0.1:27017/amontronDB',{
+
+// const dbConnection= 'mongodb+srv://testifyy03:C0mpoT1c@@cluster0.phpwylx.mongodb.net/amontronDB?retryWrites=true&w=majority'
+
+mongoose.connect(process.env.MONGODB_URL ||'mongodb://127.0.0.1:27017/amontronDB' ,{
     useNewUrlParser:true,
-    useUnifiedTopology:true,
-    useCreateIndex:true
+    useUnifiedTopology:true    
+    // createIndexes:true
 })
 .then(() => console.log("Database Connected Successfully"))
-    .catch(err => console.log(err));
-
+.catch(err => console.log(err));
 
 
 app.get('/',(req,res)=>{
@@ -43,8 +45,8 @@ app.use((err,req,res,next) =>{
 
 const port = process.env.PORT || 8095;
 // hero
-if(process.env.NODE_ENV === "production"){
-    app.use(express.static("frontend-site/build"));
-}
+// if(process.env.NODE_ENV === "production"){
+//     app.use(express.static("frontend-site/build"));
+// }
 
 app.listen(port,()=>console.log("Server started....")); 

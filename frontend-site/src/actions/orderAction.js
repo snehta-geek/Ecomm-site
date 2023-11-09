@@ -1,12 +1,14 @@
 import { ORDER_CREATE_REQUEST, ORDER_CREATE_FAIL, ORDER_CREATE_SUCCESS, ORDER_DETAILS_REQUEST, ORDER_DETAILS_SUCCESS, ORDER_DETAILS_FAIL, ORDER_PAY_REQUEST, ORDER_PAY_SUCCESS, ORDER_PAY_FAIL, ORDER_MINE_LIST_REQUEST, ORDER_MINE_LIST_FAIL, ORDER_MINE_LIST_SUCCESS } from "../constants/orderConstant"
-import Axios from "../../node_modules/axios/index";
+// import Axios from "../../node_modules/axios/index";
 import { CART_EMPTY } from "../constants/cartConstant";
+import instanceAll from '../axiosInstance';
+
 
 export const createOrder =(order) => async(dispatch,getState) =>{
     dispatch({type:ORDER_CREATE_REQUEST, payload : order});
     try{
         const {userSignin:{userInfo}} = getState();
-        const {data} =await Axios.post('/api/orders',order,{
+        const {data} =await instanceAll.post('/api/orders',order,{
             headers: {
                 Authorization : `Bearer ${userInfo.token}`,
             },
@@ -28,7 +30,7 @@ export const detailsOrder =(orderId) => async(dispatch,getState) =>{
    
         const {userSignin:{userInfo}} = getState();
         try{
-        const {data} =await Axios.get(`/api/orders/${orderId}`,{
+        const {data} =await instanceAll.get(`/api/orders/${orderId}`,{
             headers: {
                 Authorization : `Bearer ${userInfo.token}`,
             },
@@ -50,7 +52,7 @@ export const payOrder =(order, paymentResult) => async(dispatch,getState) =>{
    
         const {userSignin:{userInfo}} = getState();
         try{
-        const {data} =await Axios.put(`/api/orders/${order._id}/pay`, paymentResult, {
+        const {data} =await instanceAll.put(`/api/orders/${order._id}/pay`, paymentResult, {
             headers: {
                 Authorization : `Bearer ${userInfo.token}`,
             },
@@ -70,7 +72,7 @@ export const listOrderMine =() => async(dispatch,getState) =>{
     dispatch({type:ORDER_MINE_LIST_REQUEST});
     const {userSignin:{userInfo}} = getState();
     try{       
-        const {data} =await Axios.get('/api/orders/mine',{
+        const {data} =await instanceAll.get('/api/orders/mine',{
             headers: {
                 Authorization : `Bearer ${userInfo.token}`,
             },

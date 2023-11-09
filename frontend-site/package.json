@@ -1,7 +1,6 @@
 {
   "name": "frontend-site",
-  "proxy": "https://amontron.onrender.com",
-  "secure": "false",
+  "proxy": "https://amontron.onrender.com", 
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -1,12 +1,11 @@
 import { CART_ADD_ITEM, CART_REMOVE_ITEM, CART_SAVE_SHIPPING_ADDRESS, CART_SAVE_PAYMENT_METHOD } from "../constants/cartConstant"
 // import Axios from "../../node_modules/axios/index";
+import instanceAll from '../axiosInstance';
 
-// import Axios from "../../node_modules/axios/index";
-import Axios from "axios";
 
 
 export const addToCart= (productId,qty) => async (dispatch,getState) => {
-    const {data}=await Axios.get(`/api/products/${productId}`);
+    const {data}=await instanceAll.get(`/api/products/${productId}`);
     dispatch({
         type:CART_ADD_ITEM,
         payload:{

@@ -6,15 +6,15 @@ import productRouter from "./routers/productRouter.js";
 import dotenv from 'dotenv';
 import orderRouter from "./routers/orderRouter.js";
 import mongoose from 'mongoose';
+import cors from "cors"
 
 dotenv.config({path: './config.env'});
 
 const app=express();
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
+app.use(cors())
 
-
-// const dbConnection= 'mongodb+srv://testifyy03:C0mpoT1c@@cluster0.phpwylx.mongodb.net/amontronDB?retryWrites=true&w=majority'
 
 mongoose.connect(process.env.MONGODB_URL ||'mongodb://127.0.0.1:27017/amontronDB' ,{
     useNewUrlParser:true,

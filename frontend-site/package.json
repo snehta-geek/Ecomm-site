@@ -1,6 +1,6 @@
 {
   "name": "frontend-site",
-  "proxy": "http://localhost:8095",
+  "proxy": "https://amontron.onrender.com",
   "secure": "false",
   "version": "0.1.0",
   "private": true,
